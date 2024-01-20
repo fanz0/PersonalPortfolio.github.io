@@ -7,13 +7,13 @@
   
 body {
     display: flex;
-    justify-content: space-around;
     font-family: 'Quicksand', sans-serif;
     background: #f3eee0;
+    justify-content: center;
 }
 
 #container {
-    width: 70%;
+    width: 85%;
     background-color: #e5e4e2;
     height: fit-content;
 }
@@ -27,6 +27,7 @@ ul.back-home {
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 2;
 }
 
 ul.back-home:hover {
@@ -56,43 +57,28 @@ h1[class='target-page']::after {
 }
 
 .projects-list {
-    height: 100%;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .couple {
-    margin-top: 5%;
-    height: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .single-project {
-    margin-top: 2%;
-    margin-bottom: 2%;
     border-radius: 5%;
     width: 40%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     transition: 0.5s;
     position: relative;
-}
-
-.image-project {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 5%;
-    transition: 1s;
-}
-
-.image-project:hover {
-    opacity: 0;
+    margin-top: 5%;
+    background-image: url(images/bitshop-foto.jpg);
+    background-size: cover;
 }
 
 .single-project:hover {
@@ -105,7 +91,7 @@ h1[class='target-page']::after {
 
 .single-project p {
     font-family: 'Quicksand', sans-serif;
-    margin: 5% 2% 5% 2%;
+    margin: 7%;
 }
 
 .single-project p a {
