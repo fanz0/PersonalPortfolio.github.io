@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,40 +13,20 @@ body {
     font-family: 'Quicksand', sans-serif;
     background: #f3eee0;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
 }
 
 #container {
     width: 85%;
-    background-color: #e5e4e2;
-    height: fit-content;
-}
-
-ul.back-home {
-    border: solid white;
-    width: 100%;
-    height: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 2;
-}
-
-ul.back-home:hover {
-    background-color: rgb(211, 247, 247);
-}
-
-.back-home li {
-    list-style: none;
-    text-align: center;
 }
 
 h1[class='target-page'] {
     position: relative;
     text-align: center;
     font-size: xx-large;
-    margin-top: 10%;
+    margin-top: 5%;
+    margin-bottom: 2%;
 }
   
 h1[class='target-page']::after {
@@ -56,59 +39,106 @@ h1[class='target-page']::after {
     right: 45%;
 }
 
-.projects-list {
+.projects {
     display: flex;
+    width: 100%;
     flex-direction: column;
-    flex-wrap: wrap;
 }
 
-.couple {
+section {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
+    margin-top: 5%;
+    margin-top: 20%;
+    border-left: solid 5px lightblue;
+    border-top: solid 5px lightblue;
+    border-radius: 20px;
+}
+
+.single-project:last-child {
+    margin-bottom: 8%;
 }
 
 .single-project {
-    border-radius: 5%;
-    width: 40%;
+    border-radius: 20px;
+    margin-top: 8%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(63,157,216,1) 0%, rgba(30,189,169,1) 100%);
+    width: 100%;
     transition: 0.5s;
-    position: relative;
-    margin-top: 5%;
-    background-image: url(images/bitshop-foto.jpg);
-    background-size: cover;
-}
-
-.single-project:hover {
-    scale: 1.1;
 }
 
 .single-project h1 {
-    margin-top: 2%;
+    font-size: xx-large; 
+    margin: 2%; 
+    width: fit-content;
+    cursor: pointer;
 }
 
-.single-project p {
-    font-family: 'Quicksand', sans-serif;
-    margin: 7%;
-}
-
-.single-project p a {
+.single-project a {
+    width: fit-content;
     text-decoration: none;
 }
 
-.single-project p a:link, .single-project p a:visited {
+.single-project a:link, .single-project a:visited {
     color: blue;
 }
 
-.single-project p a:hover {
-    background-color: rgba(77, 172, 204, 0.1);
+.single-project a:hover {
+    color: red;
 }
 
-h2 {
-    text-align: center;
-    border-radius: 5%;
-    margin: 5% 5% 0 5%;
-    background-color: rgba(239, 239, 12, 0.3);
+.description {
+    border-radius: 20px;
+    width: 93%;
+    display: flex;
+    flex-direction: column;
+}
+
+.description p, .description h1, .description a {
+    margin: 2%;
+}
+
+.description p {
+    font-size: large;
+}
+
+.programs {
+    width: 6%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+.disappear {
+    display: none;
+}
+
+section:first-of-type {
+    margin-top: 5%;
+}
+
+section > h1 {
+    font-size: xx-large;
+    font-family: 'Comfortaa', sans-serif;
+    margin-top: 4%;
+}
+
+button {
+    width: 50%;
+    border: none;
+    height: 2%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: large;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-left: 25%;
+}
+
+button:hover {
+    background-color: lightblue;
 }
