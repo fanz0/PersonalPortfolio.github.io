@@ -1,9 +1,9 @@
 // Smeat Project
-let singleProjectH1Smeat = document.querySelector('#smeat h1')
+let singleProjectH3Smeat = document.querySelector('#smeat h3')
 let singleDescriptionSmeat = document.querySelector('#smeat .description')
 let singleProgramsSmeat = document.querySelector('#smeat .programs')
 
-singleProjectH1Smeat.addEventListener("click", () => {
+singleProjectH3Smeat.addEventListener("click", () => {
     if (!singleDescriptionSmeat.classList.contains('disappear') && !singleProgramsSmeat.classList.contains('disappear')) {
         singleDescriptionSmeat.classList.add('disappear')
         singleProgramsSmeat.classList.add('disappear')
@@ -14,11 +14,11 @@ singleProjectH1Smeat.addEventListener("click", () => {
 })
 
 // Exchange Project
-let singleProjectH1Exchange = document.querySelector('#exchange h1')
+let singleProjectH3Exchange = document.querySelector('#exchange h3')
 let singleDescriptionExchange = document.querySelector('#exchange .description')
 let singleProgramsExchange = document.querySelector('#exchange .programs')
 
-singleProjectH1Exchange.addEventListener("click", () => {
+singleProjectH3Exchange.addEventListener("click", () => {
     if (!singleDescriptionExchange.classList.contains('disappear') && !singleProgramsExchange.classList.contains('disappear')) {
         singleDescriptionExchange.classList.add('disappear')
         singleProgramsExchange.classList.add('disappear')
@@ -29,11 +29,11 @@ singleProjectH1Exchange.addEventListener("click", () => {
 })
 
 // Bitshop Project
-let singleProjectH1Bitshop = document.querySelector('#bitshop h1')
+let singleProjectH3Bitshop = document.querySelector('#bitshop h3')
 let singleDescriptionBitshop = document.querySelector('#bitshop .description')
 let singleProgramsBitshop = document.querySelector('#bitshop .programs')
 
-singleProjectH1Bitshop.addEventListener("click", () => {
+singleProjectH3Bitshop.addEventListener("click", () => {
     if (!singleDescriptionBitshop.classList.contains('disappear') && !singleProgramsBitshop.classList.contains('disappear')) {
         singleDescriptionBitshop.classList.add('disappear')
         singleProgramsBitshop.classList.add('disappear')
@@ -44,11 +44,11 @@ singleProjectH1Bitshop.addEventListener("click", () => {
 })
 
 // Fewsteps Project
-let singleProjectH1Fewsteps = document.querySelector('#fewsteps h1')
+let singleProjectH3Fewsteps = document.querySelector('#fewsteps h3')
 let singleDescriptionFewsteps = document.querySelector('#fewsteps .description')
 let singleProgramsFewsteps = document.querySelector('#fewsteps .programs')
 
-singleProjectH1Fewsteps.addEventListener("click", () => {
+singleProjectH3Fewsteps.addEventListener("click", () => {
     if (!singleDescriptionFewsteps.classList.contains('disappear') && !singleProgramsFewsteps.classList.contains('disappear')) {
         singleDescriptionFewsteps.classList.add('disappear')
         singleProgramsFewsteps.classList.add('disappear')
@@ -59,11 +59,11 @@ singleProjectH1Fewsteps.addEventListener("click", () => {
 })
 
 // Portfolio Project
-let singleProjectH1Portfolio = document.querySelector('#portfolio h1')
+let singleProjectH3Portfolio = document.querySelector('#portfolio h3')
 let singleDescriptionPortfolio = document.querySelector('#portfolio .description')
 let singleProgramsPortfolio = document.querySelector('#portfolio .programs')
 
-singleProjectH1Portfolio.addEventListener("click", () => {
+singleProjectH3Portfolio.addEventListener("click", () => {
     if (!singleDescriptionPortfolio.classList.contains('disappear') && !singleProgramsPortfolio.classList.contains('disappear')) {
         singleDescriptionPortfolio.classList.add('disappear')
         singleProgramsPortfolio.classList.add('disappear')
@@ -74,11 +74,11 @@ singleProjectH1Portfolio.addEventListener("click", () => {
 })
 
 // Counter Project
-let singleProjectH1Counter = document.querySelector('#counter h1')
+let singleProjectH3Counter = document.querySelector('#counter h3')
 let singleDescriptionCounter = document.querySelector('#counter .description')
 let singleProgramsCounter = document.querySelector('#counter .programs')
 
-singleProjectH1Counter.addEventListener("click", () => {
+singleProjectH3Counter.addEventListener("click", () => {
     if (!singleDescriptionCounter.classList.contains('disappear') && !singleProgramsCounter.classList.contains('disappear')) {
         singleDescriptionCounter.classList.add('disappear')
         singleProgramsCounter.classList.add('disappear')

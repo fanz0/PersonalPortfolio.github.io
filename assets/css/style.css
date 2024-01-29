@@ -16,7 +16,7 @@ body {
 }
 
 
-/* COLONNA 1 */
+/* COLUMN 1 */
 #col1 {
   width: 30%;
   height: 100%;
@@ -34,10 +34,24 @@ body {
   font-size: large;
 }
 
+.section1 > h1 {
+  margin-top: 5%;
+}
+
 .section1 > img {
   width: 50%;
   height: 10%;
   margin-top: 10%;
+}
+
+.section1 h2 {
+  font-weight: 100;
+  background-color:rgba(247, 86, 86, 0.178);
+  font-size: large;
+}
+
+#front-end-tag {
+  opacity: 0.3;
 }
 
 .section2 {
@@ -69,7 +83,7 @@ body {
 }
 
 
-/* COLONNA 2 */
+/* COLUMN 2 */
 #col2 {
   width: 60%;
   position: absolute;
@@ -78,13 +92,13 @@ body {
   background-color: #e5e4e2;
 }
 
-h1[class='target-page'] {
+h3[class='target-page'] {
   position: relative;
   text-align: center;
   font-size: xx-large;
 }
 
-h1[class='target-page']::after {
+h3[class='target-page']::after {
   content: '';
   width: 10%;
   height: 1%;
@@ -95,7 +109,7 @@ h1[class='target-page']::after {
 }
 
 /* home */
-#home h1 {
+#home h3, #home h4 {
   margin-top: 10%;
   text-align: center;
   font-size: 200%;
@@ -124,7 +138,7 @@ section:last-of-type {
   height: fit-content;
 }
 
-#skills h1.titles {
+#skills h4.titles {
   margin-top: 8%;
   text-align: center;
 }
@@ -142,6 +156,10 @@ section:last-of-type {
   align-items: center;
   width: 15%;
   transition: 0.5s;
+}
+
+#js-image {
+  opacity: 0.2;
 }
 
 
@@ -168,6 +186,10 @@ section:last-of-type {
   text-transform: uppercase;
 }
 
+.proj-button a {
+  text-decoration: none;
+}
+
 /* contacts */
 .final-section {
   margin-top: 7%;
@@ -189,4 +211,13 @@ section:last-of-type {
 
 .single-logo img {
   width: 70%;
+}
+
+.lastp {
+  font-size: x-large;
+}
+
+.lastimg {
+  width: 5%;
+  margin-left: 90%;
 }
