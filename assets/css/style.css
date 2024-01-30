@@ -147,6 +147,7 @@ section:last-of-type {
 #skills .boxes {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   margin-top: 3%;
 }
 
@@ -156,10 +157,6 @@ section:last-of-type {
   align-items: center;
   width: 15%;
   transition: 0.5s;
-}
-
-#js-image {
-  opacity: 0.2;
 }
 
 
