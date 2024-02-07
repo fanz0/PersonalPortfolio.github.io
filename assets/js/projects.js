@@ -87,3 +87,18 @@ singleProjectH3Counter.addEventListener("click", () => {
         singleProgramsCounter.classList.remove('disappear')
 }
 })
+
+// LibraRead Project
+let singleProjectH3LibraRead = document.querySelector('#libraread h3')
+let singleDescriptionLibraRead = document.querySelector('#libraread .description')
+let singleProgramsLibraRead = document.querySelector('#libraread .programs')
+
+singleProjectH3LibraRead.addEventListener("click", () => {
+    if (!singleDescriptionLibraRead.classList.contains('disappear') && !singleProgramsLibraRead.classList.contains('disappear')) {
+        singleDescriptionLibraRead.classList.add('disappear')
+        singleProgramsLibraRead.classList.add('disappear')
+    } else {
+        singleDescriptionLibraRead.classList.remove('disappear')
+        singleProgramsLibraRead.classList.remove('disappear')
+}
+})
