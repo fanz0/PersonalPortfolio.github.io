@@ -81,3 +81,15 @@ singleProjectH3LibraRead.addEventListener("click", () => {
         singleDescriptionLibraRead.classList.remove('disappear')
 }
 })
+
+// PeasOfMind Project
+let singleProjectH3PeasOfMind = document.querySelector('#peasofmind .title-programs h3')
+let singleDescriptionPeasOfMind = document.querySelector('#peasofmind .description')
+
+singleProjectH3PeasOfMind.addEventListener("click", () => {
+    if (!singleDescriptionPeasOfMind.classList.contains('disappear')) {
+        singleDescriptionPeasOfMind.classList.add('disappear')
+    } else {
+        singleDescriptionPeasOfMind.classList.remove('disappear')
+}
+})
