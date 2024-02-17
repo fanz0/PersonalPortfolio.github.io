@@ -93,3 +93,15 @@ singleProjectH3PeasOfMind.addEventListener("click", () => {
         singleDescriptionPeasOfMind.classList.remove('disappear')
 }
 })
+
+// FlightFootprintTracker Project
+let singleProjectH3FlightFootprintTracker = document.querySelector('#flightfootprinttracker .title-programs h3')
+let singleDescriptionFlightFootprintTracker = document.querySelector('#flightfootprinttracker .description')
+
+singleProjectH3FlightFootprintTracker.addEventListener("click", () => {
+    if (!singleDescriptionFlightFootprintTracker.classList.contains('disappear')) {
+        singleDescriptionFlightFootprintTracker.classList.add('disappear')
+    } else {
+        singleDescriptionFlightFootprintTracker.classList.remove('disappear')
+}
+})
