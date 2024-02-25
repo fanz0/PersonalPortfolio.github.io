@@ -162,4 +162,8 @@ button:hover {
     .description object {
         max-height: 60px;
     }
+
+    .single-project h3 {
+        font-size: small;
+    }
 }
