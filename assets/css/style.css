@@ -48,10 +48,8 @@ body {
   font-weight: 100;
   background-color:rgba(247, 86, 86, 0.178);
   font-size: large;
-}
-
-#front-end-tag {
-  opacity: 0.3;
+  padding: 0 1%;
+  border-radius: 20px;
 }
 
 .section2 {
