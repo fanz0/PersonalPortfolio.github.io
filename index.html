@@ -1,180 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="keywords" property="og:type" content="Personal Portfolio">
-    <meta property="og:url" content="https://fanz0.github.io/PersonalPortfolio.github.io/">
-    <meta name="description" property="og:title" content="Portfolio Website of Claudio Fanzini">
-    <meta name="author" content="Claudio Fanzini">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" property="og:type" content="Personal Portfolio" />
+    <meta
+      property="og:url"
+      content="https://fanz0.github.io/PersonalPortfolio.github.io/"
+    />
+    <meta
+      name="description"
+      property="og:title"
+      content="Portfolio Website of Claudio Fanzini"
+    />
+    <meta name="author" content="Claudio Fanzini" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/script.js" defer></script>
-</head>
-<body>
-
-<div id="col1">
-
-    <section class="section1">
-        <img src="assets/images/circle-profile.png" alt="foto-profilo">
-        <h1>CLAUDIO FANZINI</h1>
-        <br><br>
-        <h2>Front End Developer</h2>
-    </section>
-
-    <section class="section2">
-        <ul class="menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contacts">Contacts</a></li>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body class="bg-zinc-800 text-white">
+    <header>
+      <div class="p-2 w-full mt-5">
+        <ul
+          id="menu-list"
+          class="shadow-lg flex w-full sm:w-[80%] md:w-[60%] sm:mx-auto text-center items-center p-2 rounded-lg justify-around"
+        >
+          <li class="py-1 px-4 hover:bg-blue-200/50 rounded-md md:text-xl">
+            <a href="#home">Home</a>
+          </li>
+          <li class="py-1 px-4 hover:bg-blue-200/50 rounded-md md:text-xl">
+            <a href="#about">About</a>
+          </li>
+          <li class="py-1 px-4 hover:bg-blue-200/50 rounded-md md:text-xl">
+            <a href="#contacts">Contacts</a>
+          </li>
         </ul>
+      </div>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="mt-20">
+      <div
+        data-aos="fade-left"
+        data-aos-duration="2000"
+        class="flex flex-col items-center text-center md:flex-row md:w-[60%] md:mx-auto md:justify-evenly"
+      >
+        <img
+          class="w-[50%] max-w-64"
+          src="./assets/images/circle-profile.png"
+          alt="profile-picture"
+        />
+        <div class="flex flex-col items-center gap-5">
+          <h1 class="font-bold text-xl md:text-3xl">Ciao, sono Claudio</h1>
+          <h2 class="px-3 py-1 bg-zinc-700 rounded-lg md:text-xl">
+            Full Stack Developer
+          </h2>
+        </div>
+      </div>
     </section>
 
-</div>
-
-<div id="col2">
-
-    <section id="home">
-        <h3 class="target-page">HOME</h3>
-
-        <h4>Ciao, sono Claudio</h4>
-        <p>
-            Vivo a Sovicille, un piccolo paese nella provincia di Siena.
-            Vivere nella realtà di un paesino ti permette di dare valore alle piccole cose.
-            Il tempo sembra passare più lentamente e offre una tranquilla quotidianità.
+    <!-- About Section -->
+    <section
+      class="mt-20 bg-zinc-700/70 shadow-xl shadow-blue-200/20 px-2 py-7"
+    >
+      <div
+        data-aos="fade-right"
+        data-aos-duration="2000"
+        class="flex flex-col items-center gap-10 mx-auto w-[90%] sm:w-[80%] md:w-[60%]"
+      >
+        <h3 class="text-2xl md:text-4xl py-2 border-b border-blue-200">
+          About
+        </h3>
+        <p class="md:text-xl">
+          Vivo a Sovicille, un piccolo paese nella provincia di Siena. Vivere
+          nella realtà di un paesino ti permette di dare valore alle piccole
+          cose. Il tempo sembra passare più lentamente e offre una tranquilla
+          quotidianità.
+          <br /><br />
+          Allo stesso tempo, la tecnologia ha tutt'altro ritmo, si muove molto
+          velocemente. Sono da sempre stato attratto da ciò che è matematica e
+          tecnologia, e da come la loro applicazione possa rendere la vita delle
+          persone più semplice.
+          <br /><br />
+          Altre costanti nella mia vita sono lo sport, l'alimentazione e il
+          prendersi cura di sé stessi. Per ultimo, ma non per importanza, mi
+          piace esprimere la mia creatività attraverso la danza e piccoli
+          progetti di video editing.
         </p>
-        <p>
-            Allo stesso tempo, la tecnologia ha tutt'altro ritmo, si muove molto velocemente.
-            Sono da sempre stato attratto da ciò che è matematica e tecnologia, e da come la loro applicazione
-            possa rendere la vita delle persone più semplice.
-        </p>
-        <p>
-            Altre costanti nella mia vita sono lo sport, l'alimentazione e il prendersi cura di sé stessi.
-            Per ultimo, ma non per importanza, mi piace esprimere la mia creatività attraverso la danza
-            e piccoli progetti di video editing.
-        </p>    
+      </div>
     </section>
 
-    <section id="skills">
-        <h3 class="target-page">SKILLS</h3>
+    <!-- Skills Section -->
+    <section class="mt-20">
+      <div class="flex flex-col items-center gap-10">
+        <h3 class="text-2xl py-2 border-b border-blue-200 md:text-4xl">
+          Skills
+        </h3>
 
-        <h4 class="titles">Linguaggi</h4>
-        <div class="boxes">
-            <div class="single-box">
-                <img id="js-image" src="assets/logos/javascript-logo.png" alt="javascript-logo">
-               <p id="js-p">JavaScript</p>
-            </div> 
-            <div class="single-box">
-                <img src="assets/logos/html-logo.png" alt="html-logo">
-                <p>HTML</p>
+        <!-- Front End -->
+        <div
+          data-aos="fade-left"
+          data-aos-duration="2000"
+          class="flex flex-col items-center gap-2 w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%] p-2 shadow-lg shadow-blue-200/10 rounded-lg"
+        >
+          <h4 class="font-mono text-xl md:text-2xl bg-zinc-700 px-2 rounded-lg">
+            Front End
+          </h4>
+          <div
+            class="grid grid-cols-2 w-full md:grid-cols-5 md:gap-3 p-3 justify-items-center"
+          >
+            <div class="flex flex-col items-center max-w-40">
+              <img
+                class="w-[50%] max-w-36"
+                src="./assets/logos/javascript-logo.png"
+                alt="javascript-logo"
+              />
+              <p>JavaScript</p>
             </div>
-            <div class="single-box">
-                <img src="assets/logos/css-logo.png" alt="css-logo">
-                <p>CSS</p>
+            <div class="flex flex-col items-center max-w-40">
+              <img
+                class="w-[50%] max-w-36"
+                src="./assets/logos/html-logo.png"
+                alt="html-logo"
+              />
+              <p>HTML</p>
             </div>
-            <div class="single-box">
-                <img src="assets/logos/python-logo.png" alt="python-logo">
-                <p>Python</p>
+            <div
+              class="flex flex-col items-center max-w-40 col-span-2 md:col-span-1"
+            >
+              <img
+                class="w-[50%] max-w-36"
+                src="./assets/logos/react-logo.png"
+                alt="react-logo"
+              />
+              <p>React.js</p>
             </div>
+            <div class="flex flex-col items-center max-w-40">
+              <img
+                class="w-[50%] max-w-36"
+                src="./assets/logos/css-logo.png"
+                alt="css-logo"
+              />
+              <p>CSS</p>
+            </div>
+            <div class="flex flex-col items-center max-w-40">
+              <img
+                class="w-[50%] max-w-36"
+                src="./assets/logos/tailwind-logo.png"
+                alt="tailwind-logo"
+              />
+              <p>TailwindCSS</p>
+            </div>
+          </div>
         </div>
 
-        <h4 class="titles">Database</h4>
-        <div class="boxes">
-            <div class="single-box">
-                <img src="assets/logos/node-logo.png" alt="node-logo">
-                <p>Node.js</p>
+        <!-- Back End -->
+        <div
+          data-aos="fade-right"
+          data-aos-duration="2000"
+          class="flex flex-col items-center gap-2 w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%] p-2 shadow-lg shadow-blue-200/10 rounded-lg"
+        >
+          <h4 class="font-mono text-xl md:text-2xl bg-zinc-700 px-2 rounded-lg">
+            Back End
+          </h4>
+          <div
+            class="grid grid-cols-2 w-full md:grid-cols-5 md:gap-3 p-3 justify-items-center"
+          >
+            <div class="flex flex-col items-center max-w-40">
+              <img
+                class="w-[50%] max-w-36"
+                src="./assets/logos/node-logo.png"
+                alt="node-logo"
+              />
+              <p>Node.js</p>
             </div>
-            <div class="single-box">
-                <img src="assets/logos/mongodb-logo.png" alt="mongodb-logo">
-                <p>MongoDB</p>
+            <div class="flex flex-col items-center max-w-40">
+              <img
+                class="w-[50%] max-w-36"
+                src="./assets/logos/mongodb-logo.png"
+                alt="mongodb-logo"
+              />
+              <p>MongoDB</p>
             </div>
-            <div class="single-box">
-                <img src="assets/logos/redis-logo.png" alt="redis-logo">
-                <p>Redis</p>
+            <div
+              class="flex flex-col items-center max-w-40 col-span-2 md:col-span-1"
+            >
+              <img
+                class="w-[50%] max-w-36"
+                src="./assets/logos/python-logo.png"
+                alt="python-logo"
+              />
+              <p>Python</p>
             </div>
+            <div class="flex flex-col items-center max-w-40">
+              <img
+                class="w-[50%] max-w-36"
+                src="./assets/logos/django-logo.png"
+                alt="django-logo"
+              />
+              <p>Django</p>
+            </div>
+            <div class="flex flex-col items-center max-w-40">
+              <img
+                class="w-[50%] max-w-36"
+                src="./assets/logos/redis-logo.png"
+                alt="redis-logo"
+              />
+              <p>Redis</p>
+            </div>
+          </div>
         </div>
 
-        <h4 class="titles">Frameworks</h4>
-        <div class="boxes">
-            <div class="single-box">
-                <img src="assets/logos/react-logo.png" alt="react-logo">
-                <p>React</p>
+        <!-- Tools  -->
+        <div
+          data-aos="fade-left"
+          data-aos-duration="2000"
+          class="flex flex-col items-center gap-2 w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%] p-2 shadow-lg shadow-blue-200/10 rounded-lg"
+        >
+          <h4 class="font-mono text-xl md:text-2xl bg-zinc-700 px-2 rounded-lg">
+            Tools
+          </h4>
+          <div class="grid grid-cols-2 w-full p-3 justify-items-center">
+            <div class="flex flex-col items-center max-w-40">
+              <img
+                class="w-[50%] max-w-36"
+                src="./assets/logos/git-logo.png"
+                alt="git-logo"
+              />
+              <p>Git</p>
             </div>
-            <div class="single-box">
-                <img src="assets/logos/django-logo.png" alt="django-logo">
-                <p>Django</p>
+            <div class="flex flex-col items-center max-w-40">
+              <img
+                class="w-[50%] max-w-36"
+                src="./assets/logos/github-logo.png"
+                alt="github"
+              />
+              <p>Github</p>
             </div>
-            <div class="single-box">
-                <img src="assets/logos/tailwind-logo.png" alt="tailwind-logo">
-                <p>Tailwind</p>
-            </div>
-            <div class="single-box">
-                <img src="assets/logos/bootstrap-logo.png" alt="bootstrap-logo">
-                <p>Bootstrap</p>
-            </div>
+          </div>
         </div>
-
-        <h4 class="titles">Tools</h4>
-        <div class="boxes">
-            <div class="single-box">
-                <img src="assets/logos/git-logo.png" alt="git-logo">
-                <p>Git</p>
-            </div>
-            <div class="single-box">
-                <img src="assets/logos/blockchain-logo.png" alt="blockchain-logo">
-                <p>Blockchain</p>
-            </div>
-        </div>
-
-        <h4 class="titles">Altre Skills</h4>
-        <div class="boxes">
-            <div class="single-box">
-                <img src="assets/logos/notion-logo.png" alt="notion-logo">
-                <p>Notion</p>
-            </div>
-            <div class="single-box">
-                <img src="assets/logos/canva-logo.png" alt="canva-logo">
-                <p>Canva</p>
-            </div>
-        </div>
-        
-        <div class="proj-button">
-        <button><a href="projects.html">Dai un occhio ai miei progetti !</a></button>
-        </div>
-
+      </div>
     </section>
 
-    <section id="contacts">
-        <h3 class="target-page">CONTACTS</h3>
-        
-        <div class="final-section">
-            <p>Ti invito a contattarmi attraverso i canali social che lascio in fondo alla pagina.</p>
-            <p>Sono reperibile su Linkedin e Instagram.</p>
-            <p>Se preferisci puoi scrivere direttamente alla mia mail.</p>
-            <p class="lastp">Grazie per aver preso visione del mio portfolio!<p>
+    <!-- Project Section -->
+    <section class="mt-20">
+      <div class="flex flex-col items-center gap-10">
+        <h3 class="text-2xl py-2 border-b border-blue-200 md:text-4xl">
+          Projects
+        </h3>
 
-            <div class="contact-logos">
-                <div class="single-logo">
-                <a href="mailto:cfanzini@gmail.com"><img src="assets/logos/email png.png" alt="email-logo"></a>
-                </div>
-                <div class="single-logo">
-                <a href="https://www.linkedin.com/in/claudiofanzini/" target="_blank"><img src="assets/logos/linkedin png.png" alt="linkedin-logo"></a>
-                </div>
-                <div class="single-logo">
-                <a href="https://www.instagram.com/claudio.fanzini/" target="_blank"><img src="assets/logos/instagram png.png" alt="instagram-logo"></a>
-                </div>
+        <div
+          class="grid grid-cols-1 gap-10 justify-items-center w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%]"
+        >
+          <!-- E20 -->
+          <div
+            data-aos="flip-right"
+            data-aos-duration="2000"
+            class="grid text-center justify-items-center bg-zinc-700 rounded-lg p-3 gap-5"
+          >
+            <img
+              class="w-[40%] max-w-52"
+              src="./assets/images/E20-logo.png"
+              alt="E20-logo"
+            />
+            <h4 class="text-xl md:text-3xl font-bold font-serif">E20</h4>
+            <p class="w-[85%] text-center md:text-lg">
+              E-20 è una piattaforma che ha lo scopo di unire due realtà: quella
+              della persona che cerca cosa fare durante la settimana, e quella
+              della persona che ha un’attività e vuole raggiungere un pubblico
+              più ampio.
+              <br /><br />
+              Offriamo una vasta gamma di eventi locali, dai concerti alle
+              lezioni di sci, dai workshop alle mostre d’arte. Se c’è qualcosa
+              di interessante lo troverai qui. <br /><br />Pubblica i tuoi
+              eventi e attira più visitatori nel tuo locale. É semplice,
+              efficiente e completamente gratuito <br />
+              <br />
+              Nella home page è possibile vedere in prima pagina l’evento in
+              primo piano, e sotto gli altri eventi disponibili. <br />
+              É possibile aggiungere un proprio evento, ma attenzione, è
+              necessario effettuare il login prima, altrimenti l’opzione sarà
+              disabilitata. <br />
+              In basso sono presenti tutti i link di riferimento e le
+              informazioni riguardanti il sito.
+              <br /><br />
+              Il sito è realizzato utilizzando il MERN Stack, una combinazione
+              di tecnologie che comprende MongoDB, Express.js, React.js e
+              Node.js, con in aggiunta TailwindCSS.
+            </p>
+            <div class="mt-5 flex justify-evenly items-center w-[85%]">
+              <img
+                class="w-[10%] max-w-10"
+                src="./assets/images/github-logo.png"
+                alt="github-logo"
+              />
+              <p>Github</p>
+              |
+              <img
+                class="w-[10%] max-w-10"
+                src="./assets/images/website-logo.png"
+                alt="website-logo"
+              />
+              <p>Sito Web</p>
             </div>
+          </div>
 
+          <!-- Flight Foorprint Tracker -->
+          <div
+            data-aos="flip-left"
+            data-aos-duration="2000"
+            class="grid text-center justify-items-center bg-zinc-700 rounded-lg p-3 gap-5"
+          >
+            <img
+              class="w-[40%] max-w-52"
+              src="./assets/images/fft-logo.png"
+              alt="flight-footprint-tracker-logo"
+            />
+            <h4 class="text-xl md:text-3xl font-bold font-serif">
+              Flight Footprint Tracker
+            </h4>
+            <p class="w-[85%] text-center md:text-lg">
+              <strong
+                >Questo sito è dedicato al calcolo dell’impronta ecologica dei
+                voli aerei.
+              </strong>
+              <br /><br />
+              Per impronta ecologia si intende l’impatto ambientale che possono
+              avere le nostre azioni o semplicemente le nostre abitudini. Nel
+              contesto dei viaggi aerei il nostro scopo è calcolare l’impatto
+              ambientale dovuto all’emissione di anidride carbonica.
+              <br /><br />Viviamo in un’epoca in cui fare un viaggio aereo è
+              molto facile ed economico. Questo porta ad un aumento inevitabile
+              di persone che sfruttano questo mezzo per spostarsi. Allo stesso
+              tempo però abbiamo una crisi climatica da affrontare per poter
+              tutelare l’ambiente in cui viviamo. <br />
+              <br />
+              La tecnologia ci viene in aiuto in questo caso: attraverso “Flight
+              Footprint Tracker” è possibile <strong>calcolare</strong> in
+              maniera semplice ed intuitiva
+              <strong
+                >la quantità di CO₂ che viene emessa nell’atmosfera</strong
+              >
+              per ogni persona presente sul volo. <br />Il tutto è reso
+              possibile grazie alle API di GoClimate e le API di port-api.com.
+              <br /><br />
+              Il sito é realizzato con React.js, JavaScript, HTML e TailwindCSS.
+            </p>
+            <div class="mt-5 flex justify-evenly items-center w-[85%]">
+              <img
+                class="w-[10%] max-w-10"
+                src="./assets/images/github-logo.png"
+                alt="github-logo"
+              />
+              <p>Github</p>
+              |
+              <img
+                class="w-[10%] max-w-10"
+                src="./assets/images/website-logo.png"
+                alt="website-logo"
+              />
+              <p>Sito Web</p>
+            </div>
+          </div>
+
+          <!-- Peas of Mind -->
+          <div
+            data-aos="flip-right"
+            data-aos-duration="2000"
+            class="grid text-center justify-items-center bg-zinc-700 rounded-lg p-3 gap-5"
+          >
+            <img
+              class="w-[40%] max-w-52"
+              src="./assets/images/pom-logo.png"
+              alt="peas-of-mind-logo"
+            />
+            <h4 class="text-xl md:text-3xl font-bold font-serif">
+              Peas of Mind
+            </h4>
+            <p class="w-[85%] text-center md:text-lg">
+              "Peas of Mind" rappresenta un hub dedicato alle ricette
+              vegetariane.
+              <br /><br />
+              Nella home page è presente un tasto che permette di iniziare
+              l'esplorazione e mette a disposizione una serie di ricette
+              selezionabili. <br /><br />Si presenterà successivamente una barra
+              di ricerca dove poter inserire qualsiasi termine legato ad una
+              ricetta vegetariana, per poter dar libero spazio alla creatività e
+              alla curiosità dell'utente. Ogni ricetta ha la sua pagina dedicata
+              dove poter consultare tutte le informazioni a riguardo. <br />
+              <br />
+              Il tutto è possibile grazie alle API di spoonacular.com che
+              forniscono i contenuti presenti nella piattaforma.
+              <br />Buona ricerca e buon appetito! <br /><br />
+              Il sito é realizzato con React.js, JavaScript, HTML e TailwindCSS.
+            </p>
+            <div class="mt-5 flex justify-evenly items-center w-[85%]">
+              <img
+                class="w-[10%] max-w-10"
+                src="./assets/images/github-logo.png"
+                alt="github-logo"
+              />
+              <p>Github</p>
+              |
+              <img
+                class="w-[10%] max-w-10"
+                src="./assets/images/website-logo.png"
+                alt="website-logo"
+              />
+              <p>Sito Web</p>
+            </div>
+          </div>
         </div>
-
+      </div>
     </section>
 
-    <a href="#"><img class="lastimg" src="assets/logos/arrow-go-up-icon.png" alt="go-up"></a>
-
-</div>
-
-
-</body>
-
+    <!-- Script -->
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>

@@ -1,0 +1,27 @@
+{
+  "name": "newportfolio",
+  "version": "1.0.0",
+  "description": "My Personal Portfolio!",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./input.css -o ./assets/css/style.css",
+    "watch": "npx tailwindcss -i ./input.css -o ./assets/css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fanz0/PersonalPortfolio.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fanz0/PersonalPortfolio.github.io/issues"
+  },
+  "homepage": "https://github.com/fanz0/PersonalPortfolio.github.io#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "aos": "^3.0.0-beta.6"
+  }
+}
