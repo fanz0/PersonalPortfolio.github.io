@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="keywords" property="og:type" content="Personal Portfolio" />
@@ -28,10 +28,10 @@
           class="shadow-lg flex w-full sm:w-[80%] md:w-[60%] sm:mx-auto text-center items-center p-2 rounded-lg justify-around"
         >
           <li class="py-1 px-4 hover:bg-blue-200/50 rounded-md md:text-xl">
-            <a href="#home">Home</a>
+            <a href="#skills">Skills</a>
           </li>
           <li class="py-1 px-4 hover:bg-blue-200/50 rounded-md md:text-xl">
-            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
           </li>
           <li class="py-1 px-4 hover:bg-blue-200/50 rounded-md md:text-xl">
             <a href="#contacts">Contacts</a>
@@ -44,7 +44,7 @@
     <section class="mt-20">
       <div
         data-aos="fade-left"
-        data-aos-duration="2000"
+        data-aos-duration="1500"
         class="flex flex-col items-center text-center md:flex-row md:w-[60%] md:mx-auto md:justify-evenly"
       >
         <img
@@ -67,7 +67,7 @@
     >
       <div
         data-aos="fade-right"
-        data-aos-duration="2000"
+        data-aos-duration="1500"
         class="flex flex-col items-center gap-10 mx-auto w-[90%] sm:w-[80%] md:w-[60%]"
       >
         <h3 class="text-2xl md:text-4xl py-2 border-b border-blue-200">
@@ -95,14 +95,17 @@
     <!-- Skills Section -->
     <section class="mt-20">
       <div class="flex flex-col items-center gap-10">
-        <h3 class="text-2xl py-2 border-b border-blue-200 md:text-4xl">
+        <h3
+          id="skills"
+          class="text-2xl py-2 border-b border-blue-200 md:text-4xl"
+        >
           Skills
         </h3>
 
         <!-- Front End -->
         <div
           data-aos="fade-left"
-          data-aos-duration="2000"
+          data-aos-duration="1500"
           class="flex flex-col items-center gap-2 w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%] p-2 shadow-lg shadow-blue-200/10 rounded-lg"
         >
           <h4 class="font-mono text-xl md:text-2xl bg-zinc-700 px-2 rounded-lg">
@@ -159,7 +162,7 @@
         <!-- Back End -->
         <div
           data-aos="fade-right"
-          data-aos-duration="2000"
+          data-aos-duration="1500"
           class="flex flex-col items-center gap-2 w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%] p-2 shadow-lg shadow-blue-200/10 rounded-lg"
         >
           <h4 class="font-mono text-xl md:text-2xl bg-zinc-700 px-2 rounded-lg">
@@ -216,7 +219,7 @@
         <!-- Tools  -->
         <div
           data-aos="fade-left"
-          data-aos-duration="2000"
+          data-aos-duration="1500"
           class="flex flex-col items-center gap-2 w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%] p-2 shadow-lg shadow-blue-200/10 rounded-lg"
         >
           <h4 class="font-mono text-xl md:text-2xl bg-zinc-700 px-2 rounded-lg">
@@ -247,17 +250,20 @@
     <!-- Project Section -->
     <section class="mt-20">
       <div class="flex flex-col items-center gap-10">
-        <h3 class="text-2xl py-2 border-b border-blue-200 md:text-4xl">
-          Projects
+        <h3
+          id="portfolio"
+          class="text-2xl py-2 border-b border-blue-200 md:text-4xl"
+        >
+          Portfolio
         </h3>
 
         <div
-          class="grid grid-cols-1 gap-10 justify-items-center w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%]"
+          class="grid grid-cols-1 lg:grid-cols-2 gap-10 justify-items-center w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%]"
         >
           <!-- E20 -->
           <div
             data-aos="flip-right"
-            data-aos-duration="2000"
+            data-aos-duration="1500"
             class="grid text-center justify-items-center bg-zinc-700 rounded-lg p-3 gap-5"
           >
             <img
@@ -266,7 +272,7 @@
               alt="E20-logo"
             />
             <h4 class="text-xl md:text-3xl font-bold font-serif">E20</h4>
-            <p class="w-[85%] text-center md:text-lg">
+            <p class="w-[85%] text-center md:text-lg p-3">
               E-20 è una piattaforma che ha lo scopo di unire due realtà: quella
               della persona che cerca cosa fare durante la settimana, e quella
               della persona che ha un’attività e vuole raggiungere un pubblico
@@ -276,7 +282,7 @@
               lezioni di sci, dai workshop alle mostre d’arte. Se c’è qualcosa
               di interessante lo troverai qui. <br /><br />Pubblica i tuoi
               eventi e attira più visitatori nel tuo locale. É semplice,
-              efficiente e completamente gratuito <br />
+              efficiente e completamente gratuito. <br />
               <br />
               Nella home page è possibile vedere in prima pagina l’evento in
               primo piano, e sotto gli altri eventi disponibili. <br />
@@ -296,21 +302,31 @@
                 src="./assets/images/github-logo.png"
                 alt="github-logo"
               />
-              <p>Github</p>
+              <a
+                class="hover:bg-blue-200/50 rounded-lg px-2"
+                href="https://github.com/fanz0/E20"
+                target="_blank"
+                >Github</a
+              >
               |
               <img
                 class="w-[10%] max-w-10"
                 src="./assets/images/website-logo.png"
                 alt="website-logo"
               />
-              <p>Sito Web</p>
+              <a
+                class="hover:bg-blue-200/50 rounded-lg px-2"
+                href="https://e20-seven.vercel.app/"
+                target="_blank"
+                >Sito Web</a
+              >
             </div>
           </div>
 
           <!-- Flight Foorprint Tracker -->
           <div
             data-aos="flip-left"
-            data-aos-duration="2000"
+            data-aos-duration="1500"
             class="grid text-center justify-items-center bg-zinc-700 rounded-lg p-3 gap-5"
           >
             <img
@@ -321,7 +337,7 @@
             <h4 class="text-xl md:text-3xl font-bold font-serif">
               Flight Footprint Tracker
             </h4>
-            <p class="w-[85%] text-center md:text-lg">
+            <p class="w-[85%] text-center md:text-lg p-3">
               <strong
                 >Questo sito è dedicato al calcolo dell’impronta ecologica dei
                 voli aerei.
@@ -354,21 +370,31 @@
                 src="./assets/images/github-logo.png"
                 alt="github-logo"
               />
-              <p>Github</p>
+              <a
+                class="hover:bg-blue-200/50 rounded-lg px-2"
+                href="https://github.com/fanz0/Flight-Footprint-Tracker"
+                target="_blank"
+                >Github</a
+              >
               |
               <img
                 class="w-[10%] max-w-10"
                 src="./assets/images/website-logo.png"
                 alt="website-logo"
               />
-              <p>Sito Web</p>
+              <a
+                class="hover:bg-blue-200/50 rounded-lg px-2"
+                href="https://flightfootprinttracker.netlify.app/"
+                target="_blank"
+                >Sito Web</a
+              >
             </div>
           </div>
 
           <!-- Peas of Mind -->
           <div
             data-aos="flip-right"
-            data-aos-duration="2000"
+            data-aos-duration="1500"
             class="grid text-center justify-items-center bg-zinc-700 rounded-lg p-3 gap-5"
           >
             <img
@@ -379,22 +405,92 @@
             <h4 class="text-xl md:text-3xl font-bold font-serif">
               Peas of Mind
             </h4>
-            <p class="w-[85%] text-center md:text-lg">
-              "Peas of Mind" rappresenta un hub dedicato alle ricette
-              vegetariane.
+            <p class="w-[85%] p-3 text-center md:text-lg">
+              "Peas of Mind" rappresenta
+              <strong>un hub dedicato alle ricette vegetariane.</strong>
               <br /><br />
+              Se sei un appassionato di cucina sana e vuoi esplorare deliziose
+              opzioni senza carne, sei nel posto giusto! “Pease of Mind” è il
+              nostro sito web dedicato alle ricette vegetariane, progettato per
+              soddisfare i palati più esigenti. <br /><br />
               Nella home page è presente un tasto che permette di iniziare
               l'esplorazione e mette a disposizione una serie di ricette
               selezionabili. <br /><br />Si presenterà successivamente una barra
               di ricerca dove poter inserire qualsiasi termine legato ad una
               ricetta vegetariana, per poter dar libero spazio alla creatività e
-              alla curiosità dell'utente. Ogni ricetta ha la sua pagina dedicata
-              dove poter consultare tutte le informazioni a riguardo. <br />
+              alla curiosità dell'utente. <br /><br />
+              Ogni ricetta ha la sua pagina dedicata dove poter consultare tutte
+              le informazioni a riguardo: ingredienti della ricetta, valori
+              nutrizionali e istruzioni passo passo facili da seguire. <br />
               <br />
               Il tutto è possibile grazie alle API di spoonacular.com che
               forniscono i contenuti presenti nella piattaforma.
               <br />Buona ricerca e buon appetito! <br /><br />
               Il sito é realizzato con React.js, JavaScript, HTML e TailwindCSS.
+            </p>
+            <div class="h-fit mt-5 flex justify-evenly items-center w-[85%]">
+              <img
+                class="w-[10%] max-w-10"
+                src="./assets/images/github-logo.png"
+                alt="github-logo"
+              />
+              <a
+                class="hover:bg-blue-200/50 rounded-lg px-2"
+                href="https://github.com/fanz0/Peas-of-Mind"
+                target="_blank"
+                >Github</a
+              >
+              |
+              <img
+                class="w-[10%] max-w-10"
+                src="./assets/images/website-logo.png"
+                alt="website-logo"
+              />
+              <a
+                class="hover:bg-blue-200/50 rounded-lg px-2"
+                href="https://peasofmind.netlify.app/"
+                target="_blank"
+                >Sito Web</a
+              >
+            </div>
+          </div>
+
+          <!-- LibraRead -->
+          <div
+            data-aos="flip-left"
+            data-aos-duration="1500"
+            class="grid text-center justify-items-center bg-zinc-700 rounded-lg p-3 gap-5"
+          >
+            <img
+              class="w-[40%] max-w-52"
+              src="./assets/images/libraread-logo.png"
+              alt="libraread-logo"
+            />
+            <h4 class="text-xl md:text-3xl font-bold font-serif">LibraRead</h4>
+            <p class="w-[85%] text-center md:text-lg p-3">
+              Questo progetto è
+              <strong>un vero e proprio motore di ricerca</strong>. <br /><br />
+              Esso non solo vi permette di cercare un libro specifico, ma offre
+              anche una serie di funzionalità avanzate che vi aiuteranno a
+              scoprire nuovi libri in base ai vostri interessi, ai generi che
+              preferite e molto altro ancora. <br /><br />
+              Nella parte centrale della pagina è presente una barra di ricerca,
+              con l’apposito spazio per scrivere, un tasto laterale per poter
+              filtrare la ricerca e un tasto per avviarla.<br /><br />La ricerca
+              può essere filtrata tramite due opzioni: <br />
+              “Tutto” - è l’opzione attiva di default. Ti permette di cercare
+              attraverso tutto il catalogo qualunque libro o oggetto presente
+              che abbia quel titolo, quell’autore o semplicemente quella parola
+              presente all’interno. <br />
+              “Argomento” - questa opzione ti permette di filtrare i risultati
+              cercando un argomento specifico, qualunque sia. La ricerca
+              risulterà limitata a 100 titoli appartenenti a quella categoria.
+              <br />
+              <br />
+              Il tutto è possibile grazie alle API di Open Library che
+              forniscono i contenuti presente nella piattaforma.
+              <br /><br />
+              Il sito é realizzato con JavaScript, HTML e CSS.
             </p>
             <div class="mt-5 flex justify-evenly items-center w-[85%]">
               <img
@@ -402,14 +498,24 @@
                 src="./assets/images/github-logo.png"
                 alt="github-logo"
               />
-              <p>Github</p>
+              <a
+                class="hover:bg-blue-200/50 rounded-lg px-2"
+                href="https://github.com/fanz0/LibraRead.github.io"
+                target="_blank"
+                >Github</a
+              >
               |
               <img
                 class="w-[10%] max-w-10"
                 src="./assets/images/website-logo.png"
                 alt="website-logo"
               />
-              <p>Sito Web</p>
+              <a
+                class="hover:bg-blue-200/50 rounded-lg px-2"
+                href="https://github.com/fanz0/LibraRead.github.io"
+                target="_blank"
+                >Sito Web</a
+              >
             </div>
           </div>
         </div>
