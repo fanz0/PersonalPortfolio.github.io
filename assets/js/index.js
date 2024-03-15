@@ -24,6 +24,6 @@ iconDark.addEventListener("click", () => {
     img.src = "./assets/images/github-logo.png";
   });
   websiteLogo.forEach((img) => {
-    img.src = "./assets/images/github-logo.png";
+    img.src = "./assets/images/website-logo.png";
   });
 });
