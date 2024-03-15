@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="keywords" property="og:type" content="Personal Portfolio" />
@@ -19,14 +19,47 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/index.js" defer></script>
   </head>
-  <body class="bg-zinc-800 text-white">
+  <body class="dark:bg-zinc-800 dark:text-white">
     <header>
       <div class="p-2 w-full mt-5">
         <ul
           id="menu-list"
           class="shadow-lg flex w-full sm:w-[80%] md:w-[60%] sm:mx-auto text-center items-center p-2 rounded-lg justify-around"
         >
+          <li>
+            <svg
+              id="light-mode"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 cursor-pointer"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+              />
+            </svg>
+            <svg
+              id="dark-mode"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 cursor-pointer hidden"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+              />
+            </svg>
+          </li>
           <li class="py-1 px-4 hover:bg-blue-200/50 rounded-md md:text-xl">
             <a href="#skills">Skills</a>
           </li>
@@ -54,7 +87,9 @@
         />
         <div class="flex flex-col items-center gap-5">
           <h1 class="font-bold text-xl md:text-3xl">Ciao, sono Claudio</h1>
-          <h2 class="px-3 py-1 bg-zinc-700 rounded-lg md:text-xl">
+          <h2
+            class="px-3 py-1 bg-zinc-300 dark:bg-zinc-700 rounded-lg md:text-xl"
+          >
             Full Stack Developer
           </h2>
         </div>
@@ -63,14 +98,16 @@
 
     <!-- About Section -->
     <section
-      class="mt-20 bg-zinc-700/70 shadow-xl shadow-blue-200/20 px-2 py-7"
+      class="mt-20 bg-zinc-300/70 dark:bg-zinc-700/70 shadow-xl shadow-blue-200/20 px-2 py-7"
     >
       <div
         data-aos="fade-right"
         data-aos-duration="1500"
         class="flex flex-col items-center gap-10 mx-auto w-[90%] sm:w-[80%] md:w-[60%]"
       >
-        <h3 class="text-2xl md:text-4xl py-2 border-b border-blue-200">
+        <h3
+          class="text-2xl md:text-4xl py-2 border-b-2 border-blue-300 dark:border-blue-200"
+        >
           About
         </h3>
         <p class="md:text-xl">
@@ -97,7 +134,7 @@
       <div class="flex flex-col items-center gap-10">
         <h3
           id="skills"
-          class="text-2xl py-2 border-b border-blue-200 md:text-4xl"
+          class="text-2xl py-2 border-b-2 border-blue-300 dark:border-blue-200 md:text-4xl"
         >
           Skills
         </h3>
@@ -106,9 +143,11 @@
         <div
           data-aos="fade-left"
           data-aos-duration="1500"
-          class="flex flex-col items-center gap-2 w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%] p-2 shadow-lg shadow-blue-200/10 rounded-lg"
+          class="flex flex-col items-center gap-2 w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%] p-2 shadow-lg shadow-blue-300 dark:shadow-blue-200/10 rounded-lg"
         >
-          <h4 class="font-mono text-xl md:text-2xl bg-zinc-700 px-2 rounded-lg">
+          <h4
+            class="font-mono text-xl md:text-2xl bg-zinc-300 dark:bg-zinc-700 px-2 rounded-lg"
+          >
             Front End
           </h4>
           <div
@@ -163,9 +202,11 @@
         <div
           data-aos="fade-right"
           data-aos-duration="1500"
-          class="flex flex-col items-center gap-2 w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%] p-2 shadow-lg shadow-blue-200/10 rounded-lg"
+          class="flex flex-col items-center gap-2 w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%] p-2 shadow-lg shadow-blue-300 dark:shadow-blue-200/10 rounded-lg"
         >
-          <h4 class="font-mono text-xl md:text-2xl bg-zinc-700 px-2 rounded-lg">
+          <h4
+            class="font-mono text-xl md:text-2xl bg-zinc-300 dark:bg-zinc-700 px-2 rounded-lg"
+          >
             Back End
           </h4>
           <div
@@ -220,9 +261,11 @@
         <div
           data-aos="fade-left"
           data-aos-duration="1500"
-          class="flex flex-col items-center gap-2 w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%] p-2 shadow-lg shadow-blue-200/10 rounded-lg"
+          class="flex flex-col items-center gap-2 w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%] p-2 shadow-lg shadow-blue-300 dark:shadow-blue-200/10 rounded-lg"
         >
-          <h4 class="font-mono text-xl md:text-2xl bg-zinc-700 px-2 rounded-lg">
+          <h4
+            class="font-mono text-xl md:text-2xl bg-zinc-300 dark:bg-zinc-700 px-2 rounded-lg"
+          >
             Tools
           </h4>
           <div class="grid grid-cols-2 w-full p-3 justify-items-center">
@@ -252,7 +295,7 @@
       <div class="flex flex-col items-center gap-10">
         <h3
           id="portfolio"
-          class="text-2xl py-2 border-b border-blue-200 md:text-4xl"
+          class="text-2xl py-2 border-b-2 border-blue-300 dark:border-blue-200 md:text-4xl"
         >
           Portfolio
         </h3>
@@ -264,7 +307,7 @@
         >
           <!-- E20 -->
           <div
-            class="snap-center flex flex-col py-5 justify-evenly items-center bg-zinc-700 rounded-lg w-full shrink-0"
+            class="snap-center flex flex-col py-5 justify-evenly items-center bg-slate-300 dark:bg-zinc-700 rounded-lg w-full shrink-0"
           >
             <img
               class="w-[40%] max-w-32"
@@ -298,24 +341,24 @@
             </p>
             <div class="flex justify-evenly items-center w-[85%]">
               <img
-                class="w-[10%] max-w-10"
+                class="w-[10%] max-w-10 github-logo"
                 src="./assets/images/github-logo.png"
                 alt="github-logo"
               />
               <a
-                class="hover:bg-blue-200/50 rounded-lg px-2"
+                class="hover:bg-blue-400 dark:hover:bg-blue-200/50 rounded-lg px-2"
                 href="https://github.com/fanz0/E20"
                 target="_blank"
                 >Github</a
               >
               |
               <img
-                class="w-[10%] max-w-10"
+                class="w-[10%] max-w-10 website-logo"
                 src="./assets/images/website-logo.png"
                 alt="website-logo"
               />
               <a
-                class="hover:bg-blue-200/50 rounded-lg px-2"
+                class="hover:bg-blue-400 dark:hover:bg-blue-200/50 rounded-lg px-2"
                 href="https://e20-seven.vercel.app/"
                 target="_blank"
                 >Sito Web</a
@@ -325,7 +368,7 @@
 
           <!-- Flight Foorprint Tracker -->
           <div
-            class="snap-center flex flex-col py-5 justify-evenly items-center bg-zinc-700 rounded-lg w-full shrink-0"
+            class="snap-center flex flex-col py-5 justify-evenly items-center bg-slate-300 dark:bg-zinc-700 rounded-lg w-full shrink-0"
           >
             <img
               class="w-[40%] max-w-32"
@@ -364,24 +407,24 @@
             </p>
             <div class="mt-5 flex justify-evenly items-center w-[85%]">
               <img
-                class="w-[10%] max-w-10"
+                class="w-[10%] max-w-10 github-logo"
                 src="./assets/images/github-logo.png"
                 alt="github-logo"
               />
               <a
-                class="hover:bg-blue-200/50 rounded-lg px-2"
+                class="hover:bg-blue-400 dark:hover:bg-blue-200/50 rounded-lg px-2"
                 href="https://github.com/fanz0/Flight-Footprint-Tracker"
                 target="_blank"
                 >Github</a
               >
               |
               <img
-                class="w-[10%] max-w-10"
+                class="w-[10%] max-w-10 website-logo"
                 src="./assets/images/website-logo.png"
                 alt="website-logo"
               />
               <a
-                class="hover:bg-blue-200/50 rounded-lg px-2"
+                class="hover:bg-blue-400 dark:hover:bg-blue-200/50 rounded-lg px-2"
                 href="https://flightfootprinttracker.netlify.app/"
                 target="_blank"
                 >Sito Web</a
@@ -391,7 +434,7 @@
 
           <!-- Peas of Mind -->
           <div
-            class="snap-center flex flex-col py-5 justify-evenly items-center bg-zinc-700 rounded-lg w-full shrink-0"
+            class="snap-center flex flex-col py-5 justify-evenly items-center bg-slate-300 dark:bg-zinc-700 rounded-lg w-full shrink-0"
           >
             <img
               class="w-[40%] max-w-32"
@@ -425,24 +468,24 @@
             </p>
             <div class="h-fit mt-5 flex justify-evenly items-center w-[85%]">
               <img
-                class="w-[10%] max-w-10"
+                class="w-[10%] max-w-10 github-logo"
                 src="./assets/images/github-logo.png"
                 alt="github-logo"
               />
               <a
-                class="hover:bg-blue-200/50 rounded-lg px-2"
+                class="hover:bg-blue-400 dark:hover:bg-blue-200/50 rounded-lg px-2"
                 href="https://github.com/fanz0/Peas-of-Mind"
                 target="_blank"
                 >Github</a
               >
               |
               <img
-                class="w-[10%] max-w-10"
+                class="w-[10%] max-w-10 website-logo"
                 src="./assets/images/website-logo.png"
                 alt="website-logo"
               />
               <a
-                class="hover:bg-blue-200/50 rounded-lg px-2"
+                class="hover:bg-blue-400 dark:hover:bg-blue-200/50 rounded-lg px-2"
                 href="https://peasofmind.netlify.app/"
                 target="_blank"
                 >Sito Web</a
@@ -452,7 +495,7 @@
 
           <!-- LibraRead -->
           <div
-            class="snap-center flex flex-col py-5 justify-evenly items-center bg-zinc-700 rounded-lg w-full shrink-0"
+            class="snap-center flex flex-col py-5 justify-evenly items-center bg-slate-300 dark:bg-zinc-700 rounded-lg w-full shrink-0"
           >
             <img
               class="w-[40%] max-w-32"
@@ -486,24 +529,24 @@
             </p>
             <div class="mt-5 flex justify-evenly items-center w-[85%]">
               <img
-                class="w-[10%] max-w-10"
+                class="w-[10%] max-w-10 github-logo"
                 src="./assets/images/github-logo.png"
                 alt="github-logo"
               />
               <a
-                class="hover:bg-blue-200/50 rounded-lg px-2"
+                class="hover:bg-blue-400 dark:hover:bg-blue-200/50 rounded-lg px-2"
                 href="https://github.com/fanz0/LibraRead.github.io"
                 target="_blank"
                 >Github</a
               >
               |
               <img
-                class="w-[10%] max-w-10"
+                class="w-[10%] max-w-10 website-logo"
                 src="./assets/images/website-logo.png"
                 alt="website-logo"
               />
               <a
-                class="hover:bg-blue-200/50 rounded-lg px-2"
+                class="hover:bg-blue-400 dark:hover:bg-blue-200/50 rounded-lg px-2"
                 href="https://fanz0.github.io/LibraRead.github.io/"
                 target="_blank"
                 >Sito Web</a
@@ -520,7 +563,7 @@
       >
         <h3
           id="contacts"
-          class="text-2xl py-2 border-b border-blue-200 md:text-4xl"
+          class="text-2xl py-2 border-b-2 border-blue-300 dark:border-blue-200 md:text-4xl"
         >
           Contacts
         </h3>
